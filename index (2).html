@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampurna Suryavansh Vanshavali</title>
+    <style>
+        :root { --shahi-gold: #d4af37; --ram-saffron: #ff9933; --deep-brown: #4a2c0f; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fffaf0; color: var(--deep-brown); margin: 0; padding: 20px; }
+        header { text-align: center; padding: 30px; background: linear-gradient(135deg, #ff9933, #d35400); color: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        
+        /* Diagram Style */
+        .tree-container { display: flex; flex-direction: column; align-items: center; margin: 40px 0; overflow-x: auto; }
+        .node { background: white; border: 2px solid var(--shahi-gold); padding: 15px; border-radius: 10px; min-width: 200px; text-align: center; position: relative; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .node img { width: 80px; height: 80px; border-radius: 50%; border: 2px solid var(--ram-saffron); margin-bottom: 10px; }
+        .line { height: 30px; width: 3px; background-color: var(--shahi-gold); }
+
+        /* Full List Style */
+        .full-list { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; }
+        .king-card { background: white; padding: 15px; border-left: 5px solid #ccc; border-radius: 5px; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
+        .king-card.legendary { border-left-color: var(--ram-saffron); background: #fff4e6; transform: scale(1.02); }
+        .king-name { font-weight: bold; color: #b03a2e; }
+        .detail { font-size: 0.9em; margin-top: 8px; color: #333; line-height: 1.4; }
+        
+        h2 { border-bottom: 2px solid var(--shahi-gold); display: inline-block; padding-bottom: 5px; }
+        .badge { background: var(--ram-saffron); color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7em; vertical-align: middle; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>इक्ष्वाकु वंश (सूर्यवंश) वंशावली</h1>
+    <p>ब्रह्मा जी से भगवान श्री राम तक की 63 पीढ़ियाँ</p>
+</header>
+
+<section class="tree-container">
+    <h2>मुख्य वंश वृक्ष (Label Diagram)</h2>
+    <div class="node"><img src="https://via.placeholder.com/80?text=ब्रह्मा" alt="Brahma"><div><b>1. ब्रह्मा जी</b><br><small>सृष्टि के रचयिता</small></div></div>
+    <div class="line"></div>
+    <div class="node"><img src="https://via.placeholder.com/80?text=विवस्वान" alt="Surya"><div><b>4. विवस्वान (सूर्य)</b><br><small>वंश के मूल पुरुष</small></div></div>
+    <div class="line"></div>
+    <div class="node"><img src="https://via.placeholder.com/80?text=इक्ष्वाकु" alt="Ikshvaku"><div><b>6. महाराजा इक्ष्वाकु</b><br><small>अयोध्या के संस्थापक</small></div></div>
+    <div class="line"></div>
+    <div class="node"><img src="https://via.placeholder.com/80?text=पृथु" alt="Prithu"><div><b>11. महाराजा पृथु</b><br><small>जिनके नाम से 'पृथ्वी' पड़ा</small></div></div>
+    <div class="line"></div>
+    <div class="node"><img src="https://via.placeholder.com/80?text=भगीरथ" alt="Bhagirath"><div><b>43. महाराजा भगीरथ</b><br><small>गंगा को धरती पर लाए</small></div></div>
+    <div class="line"></div>
+    <div class="node"><img src="https://via.placeholder.com/80?text=रघु" alt="Raghu"><div><b>60. महाराजा रघु</b><br><small>रघुकुल की कीर्ति बढ़ाई</small></div></div>
+    <div class="line"></div>
+    <div class="node" style="border-color: #ff0000; background: #fff5f5;"><img src="https://via.placeholder.com/80?text=श्री+राम" alt="Ram"><div><b>63. भगवान श्री राम</b><br><small>मर्यादा पुरुषोत्तम</small></div></div>
+</section>
+
+<h2 style="text-align:center; width:100%;">पूर्ण 63 राजाओं की सूची एवं विवरण</h2>
+<div class="full-list">
+    <div class="king-card">1. <span class="king-name">ब्रह्मा</span></div>
+    <div class="king-card">2. <span class="king-name">मरीचि</span></div>
+    <div class="king-card">3. <span class="king-name">कश्यप</span></div>
+    <div class="king-card legendary">4. <span class="king-name">विवस्वान (सूर्य)</span> <span class="badge">MAHAN</span><div class="detail">इन्हीं के नाम से यह 'सूर्यवंश' कहलाया।</div></div>
+    <div class="king-card">5. <span class="king-name">वैवस्वत मनु</span></div>
+    <div class="king-card legendary">6. <span class="king-name">इक्ष्वाकु</span> <span class="badge">MAHAN</span><div class="detail">इन्होंने ही अयोध्या राज्य की स्थापना की।</div></div>
+    <div class="king-card">7. <span class="king-name">विकुक्षि</span></div>
+    <div class="king-card">8. <span class="king-name">निमि</span></div>
+    <div class="king-card">9. <span class="king-name">मिथि</span></div>
+    <div class="king-card">10. <span class="king-name">विशाल</span></div>
+    <div class="king-card legendary">11. <span class="king-name">पृथु</span> <span class="badge">MAHAN</span><div class="detail">धरती का दोहन कर उसे उपजाऊ बनाया, इन्हीं के नाम से धरती को <b>'पृथ्वी'</b> कहा जाता है।</div></div>
+    <div class="king-card">12. <span class="king-name">विश्वरंधी</span></div>
+    <div class="king-card">13. <span class="king-name">चन्द्र</span></div>
+    <div class="king-card">14. <span class="king-name">युवनाश्व</span></div>
+    <div class="king-card">15. <span class="king-name">शावस्त</span></div>
+    <div class="king-card">16. <span class="king-name">बृहदश्व</span></div>
+    <div class="king-card">17. <span class="king-name">कुवलयाश्व</span></div>
+    <div class="king-card">18. <span class="king-name">दृढ़ाश्व</span></div>
+    <div class="king-card">19. <span class="king-name">प्रमोद</span></div>
+    <div class="king-card">20. <span class="king-name">हर्यश्व</span></div>
+    <div class="king-card">21. <span class="king-name">निकुम्भ</span></div>
+    <div class="king-card">22. <span class="king-name">संहताश्व</span></div>
+    <div class="king-card legendary">23. <span class="king-name">मान्धाता</span> <span class="badge">MAHAN</span><div class="detail">एक चक्रवर्ती सम्राट जिन्होंने संपूर्ण पृथ्वी पर शासन किया।</div></div>
+    <div class="king-card">24. <span class="king-name">पुरुकुत्स</span></div>
+    <div class="king-card">25. <span class="king-name">त्रसदस्यु</span></div>
+    <div class="king-card">26. <span class="king-name">अनरण्य</span></div>
+    <div class="king-card">27. <span class="king-name">हर्यश्व II</span></div>
+    <div class="king-card">28. <span class="king-name">अरुण</span></div>
+    <div class="king-card">29. <span class="king-name">त्रिबंधन</span></div>
+    <div class="king-card">30. <span class="king-name">त्रिशंकु</span></div>
+    <div class="king-card legendary">31. <span class="king-name">हरिश्चंद्र</span> <span class="badge">MAHAN</span><div class="detail"><b>सत्यवादी</b> राजा, जिन्होंने सत्य की रक्षा के लिए सब कुछ त्याग दिया।</div></div>
+    <div class="king-card">32. <span class="king-name">रोहिताश्व</span></div>
+    <div class="king-card">33. <span class="king-name">हारित</span></div>
+    <div class="king-card">34. <span class="king-name">चंचु</span></div>
+    <div class="king-card">35. <span class="king-name">विजय</span></div>
+    <div class="king-card">36. <span class="king-name">रुरुक</span></div>
+    <div class="king-card">37. <span class="king-name">वृक</span></div>
+    <div class="king-card">38. <span class="king-name">बाहु</span></div>
+    <div class="king-card legendary">39. <span class="king-name">सगर</span> <span class="badge">MAHAN</span><div class="detail">इन्हीं के नाम से समुद्र का नाम <b>'सागर'</b> प्रसिद्ध हुआ।</div></div>
+    <div class="king-card">40. <span class="king-name">असमंजस</span></div>
+    <div class="king-card">41. <span class="king-name">अंशुमान</span></div>
+    <div class="king-card">42. <span class="king-name">दिलीप I</span></div>
+    <div class="king-card legendary">43. <span class="king-name">भगीरथ</span> <span class="badge">MAHAN</span><div class="detail">घोर तपस्या करके गंगा जी को स्वर्ग से धरती पर लाए। गंगा का एक नाम <b>'भागीरथी'</b> है।</div></div>
+    <div class="king-card">44. <span class="king-name">श्रुत</span></div>
+    <div class="king-card">45. <span class="king-name">नाभाग</span></div>
+    <div class="king-card">46. <span class="king-name">अम्बरीष</span></div>
+    <div class="king-card">47. <span class="king-name">सिंधुद्वीप</span></div>
+    <div class="king-card">48. <span class="king-name">अयुतायु</span></div>
+    <div class="king-card">49. <span class="king-name">ऋतूपर्ण</span></div>
+    <div class="king-card">50. <span class="king-name">सर्वकाम</span></div>
+    <div class="king-card">51. <span class="king-name">सुदास</span></div>
+    <div class="king-card">52. <span class="king-name">सौदास (कल्माषपाद)</span></div>
+    <div class="king-card">53. <span class="king-name">अश्मक</span></div>
+    <div class="king-card">54. <span class="king-name">मूलक</span></div>
+    <div class="king-card">55. <span class="king-name">दशरथ I</span></div>
+    <div class="king-card">56. <span class="king-name">इलविल</span></div>
+    <div class="king-card">57. <span class="king-name">विश्वसह</span></div>
+    <div class="king-card">58. <span class="king-name">खट्वांग</span></div>
+    <div class="king-card">59. <span class="king-name">दिलीप II</span></div>
+    <div class="king-card legendary">60. <span class="king-name">रघु</span> <span class="badge">MAHAN</span><div class="detail">इतने प्रतापी राजा कि वंश का नाम <b>'रघुवंश'</b> पड़ा। "रघुकुल रीति सदा चलि आई।"</div></div>
+    <div class="king-card">61. <span class="king-name">अज</span></div>
+    <div class="king-card">62. <span class="king-name">दशरथ II</span></div>
+    <div class="king-card legendary" style="border: 2px solid #ff9933;">63. <span class="king-name">श्री राम</span> <span class="badge">AVATAR</span><div class="detail">मर्यादा पुरुषोत्तम, भगवान विष्णु के सातवें अवतार जिन्होंने धर्म की स्थापना की।</div></div>
+</div>
+
+<footer style="text-align: center; margin-top: 50px; padding: 20px; color: #777;">
+    <p>॥ जय श्री राम ॥</p>
+    <section style="max-width: 1000px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h2 style="color: #d35400; text-align: center;">Mahan Purvajon ki Gaurav Gatha</h2>
+    
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #b03a2e;">1. Raja Harishchandra (Satya ka Prateek)</h3>
+        <p>Unhone satya ki raksha ke liye apna rajya, patni aur putra tak ka tyaag kar diya. Unka jeevan sikhata hai ki paristhiti chahe kitni bhi kathin ho, satya ka marg nahi chhodna chahiye.</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #b03a2e;">2. Raja Sagar (Samudra ke Janak)</h3>
+        <p>Inke naam se hi 'Sagar' shabd bana. Inke 60,000 putron ke uddhaar ke liye hi Raghuvansh mein Ganga ka aagman hua.</p>
+    </div>
+
+    <div style="margin-bottom: 30px;">
+        <h3 style="color: #b03a2e;">3. Raja Bhagirath (Parishram ki Parakashta)</h3>
+        <p>Ganga ko dharti par laane ka asambhav karya inhi ke 'Bhagirath Prayas' se safal hua. Inke karan hi aaj Ganga ko <b>Bhagirathi</b> kaha jata hai.</p>
+    </div>
+</section>
+    <div style="margin-bottom: 30px; border-top: 1px solid #eee; pt: 20px;">
+        <h3 style="color: #b03a2e;">4. Maharaj Prithu (Dharti ke Swami)</h3>
+        <p>Inhone hi sabse pehle kheti aur sabhyata ki neenv rakhi. Dharti ko upjau banaya aur manav jaati ka palan-poshan kiya, isliye is grah ko <b>'Prithvi'</b> kaha jata hai.</p>
+    </div>
+
+    <div style="margin-bottom: 30px; border-top: 1px solid #eee; pt: 20px;">
+        <h3 style="color: #b03a2e;">5. Raja Dilip (Gau-Bhakti ke Adarsh)</h3>
+        <p>Raja Dilip (Dwitiya) ne Nandini gaay ki raksha ke liye apne pranon ki baazi laga di thi. Inhi ki ghor tapasya aur punyakarma ke fal-swaroop inke vansh mein aage chalkar <b>Bhagwan Ram</b> ne janm liya.</p>
+    </div>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Suryavansh Mahakosh - 63 Peediyaan</title>
+    <style>
+        :root { --shahi: #d35400; --saffron: #ff9933; --gold: #d4af37; }
+        body { font-family: 'Segoe UI', Arial; background-color: #fffdf5; color: #4a2c0f; margin: 0; padding: 20px; }
+        
+        .header { text-align: center; background: linear-gradient(to right, #d35400, #ff9933); color: white; padding: 40px; border-radius: 20px; margin-bottom: 30px; box-shadow: 0 10px 20px rgba(0,0,0,0.15); }
+        
+        /* Search Box Styling */
+        .search-container { text-align: center; margin-bottom: 40px; }
+        #kingSearch { width: 60%; padding: 15px; border: 2px solid var(--shahi); border-radius: 30px; font-size: 1.1em; outline: none; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+        /* Diagram Section */
+        .diagram-section { display: flex; flex-direction: column; align-items: center; margin-bottom: 50px; background: white; padding: 20px; border-radius: 20px; border: 2px dashed var(--gold); }
+        .node { border: 2px solid var(--shahi); padding: 10px; border-radius: 10px; margin: 10px; width: 220px; text-align: center; background: #fffaf0; font-weight: bold; }
+        .connector { width: 4px; height: 20px; background: var(--gold); }
+
+        /* Kings Grid */
+        .kings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .king-card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border-top: 5px solid #ddd; transition: 0.3s; }
+        .king-card.mahan { border-top-color: var(--shahi); background: #fff4e6; }
+        .king-card:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+        
+        .king-number { font-size: 0.8em; color: #888; font-weight: bold; }
+        .king-name { font-size: 1.3em; color: var(--shahi); display: block; margin: 5px 0; }
+        .achievement { font-size: 0.9em; line-height: 1.4; color: #555; border-top: 1px solid #eee; margin-top: 10px; padding-top: 10px; }
+        .badge { background: #d35400; color: white; padding: 2px 8px; border-radius: 5px; font-size: 0.7em; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>इक्ष्वाकु वंश (रघुवंश) महाकोश</h1>
+    <p>ब्रह्मा जी से मर्यादा पुरुषोत्तम श्री राम तक की पावन वंशावली</p>
+</div>
+
+<div class="search-container">
+    <input type="text" id="kingSearch" onkeyup="searchKing()" placeholder="राजा का नाम या नंबर खोजें (उदा: 'Prithu' या '63')...">
+</div>
+
+<div class="diagram-section">
+    <h2>मुख्य वंश वृक्ष (Overview)</h2>
+    <div class="node">1. ब्रह्मा जी</div>
+    <div class="connector"></div>
+    <div class="node">4. सूर्य (विवस्वान)</div>
+    <div class="connector"></div>
+    <div class="node">11. महाराजा पृथु</div>
+    <div class="connector"></div>
+    <div class="node">31. राजा हरिश्चंद्र</div>
+    <div class="connector"></div>
+    <div class="node">43. राजा भगीरथ</div>
+    <div class="connector"></div>
+    <div class="node">60. राजा रघु</div>
+    <div class="connector"></div>
+    <div class="node" style="background: var(--shahi); color: white;">63. भगवान श्री राम</div>
+</div>
+
+<div class="kings-grid" id="kingsGrid">
+    <div class="king-card"> <span class="king-number">#1</span> <span class="king-name">ब्रह्मा (Brahma)</span> </div>
+    <div class="king-card"> <span class="king-number">#2</span> <span class="king-name">मरीचि (Marichi)</span> </div>
+    <div class="king-card"> <span class="king-number">#3</span> <span class="king-name">कश्यप (Kashyap)</span> </div>
+    
+    <div class="king-card mahan"> 
+        <span class="king-number">#4</span> <span class="king-name">विवस्वान (Surya) <span class="badge">Mahan</span></span> 
+        <div class="achievement">वंश के आदि पुरुष। इन्हीं के तेज से यह 'सूर्यवंश' कहलाया।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#11</span> <span class="king-name">महाराज पृथु (Prithu) <span class="badge">Mahan</span></span> 
+        <div class="achievement">धरती के प्रथम चक्रवर्ती सम्राट। इनके नाम पर ही धरती का नाम <b>'पृथ्वी'</b> पड़ा। इन्होंने कृषि और सभ्यता का विस्तार किया।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#31</span> <span class="king-name">राजा हरिश्चंद्र <span class="badge">Mahan</span></span> 
+        <div class="achievement">सत्य के साक्षात प्रतीक। जिन्होंने सत्य के लिए अपना राज-पाट और परिवार तक त्याग दिया।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#39</span> <span class="king-name">राजा सगर <span class="badge">Mahan</span></span> 
+        <div class="achievement">इनके 60 हजार पुत्रों ने समुद्र की खुदाई की थी, जिससे इसका नाम <b>'सागर'</b> पड़ा।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#42</span> <span class="king-name">राजा दिलीप (प्रथम)</span> 
+        <div class="achievement">महान और प्रतापी शासक, भगीरथ के पूर्वज।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#43</span> <span class="king-name">राजा भगीरथ <span class="badge">Mahan</span></span> 
+        <div class="achievement">कठोर तपस्या से गंगा को धरती पर लाने वाले महानायक। गंगा को इनके नाम पर <b>'भागीरथी'</b> कहा जाता है।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#59</span> <span class="king-name">राजा दिलीप (द्वितीय) <span class="badge">Mahan</span></span> 
+        <div class="achievement">नन्दिनी गाय की सेवा के लिए स्वयं के प्राण अर्पण करने वाले गौ-भक्त राजा।</div>
+    </div>
+
+    <div class="king-card mahan"> 
+        <span class="king-number">#60</span> <span class="king-name">महाराजा रघु <span class="badge">Mahan</span></span> 
+        <div class="achievement">इतने प्रतापी कि वंश का नाम ही <b>'रघुवंश'</b> पड़ गया। इनके दान की चर्चा पूरे ब्रह्मांड में थी।</div>
+    </div>
+
+    <div class="king-card"> <span class="king-number">#61</span> <span class="king-name">राजा अज</span> </div>
+    <div class="king-card"> <span class="king-number">#62</span> <span class="king-name">राजा दशरथ</span> </div>
+
+    <div class="king-card mahan" style="border: 3px solid var(--shahi);"> 
+        <span class="king-number">#63</span> <span class="king-name">भगवान श्री राम <span class="badge">Avatar</span></span> 
+        <div class="achievement">मर्यादा पुरुषोत्तम। विष्णु के सातवें अवतार। 'राम-राज्य' के आदर्श शासक।</div>
+    </div>
+</div>
+
+<script>
+function searchKing() {
+    let input = document.getElementById('kingSearch').value.toUpperCase();
+    let cards = document.getElementsByClassName('king-card');
+    
+    for (let i = 0; i < cards.length; i++) {
+        let name = cards[i].innerText;
+        if (name.toUpperCase().indexOf(input) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+<footer style="text-align: center; margin-top: 50px; padding: 20px;">
+    <p>॥ जय श्री राम ॥</p>
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Suryavansh Mahakosh - Interactive Edition</title>
+    <style>
+        :root { --shahi: #d35400; --saffron: #ff9933; --gold: #d4af37; --bg: #fffcf2; }
+        body { font-family: 'Segoe UI', Arial; background-color: var(--bg); color: #4a2c0f; margin: 0; padding: 20px; }
+        
+        .header { text-align: center; background: linear-gradient(135deg, #d35400, #ff9933); color: white; padding: 30px; border-radius: 15px; margin-bottom: 20px; }
+        
+        /* Search Box */
+        .search-area { text-align: center; margin-bottom: 30px; }
+        #kingSearch { width: 50%; padding: 12px 25px; border: 2px solid var(--shahi); border-radius: 25px; font-size: 1em; outline: none; }
+
+        /* Grid System */
+        .kings-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; max-width: 1200px; margin: auto; }
+        .king-card { background: white; border-radius: 12px; padding: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); cursor: pointer; border-top: 4px solid #ccc; transition: 0.3s; position: relative; }
+        .king-card.mahan { border-top-color: var(--shahi); background: #fff9f0; }
+        .king-card:hover { transform: scale(1.03); box-shadow: 0 6px 15px rgba(0,0,0,0.1); }
+        
+        .badge { background: var(--shahi); color: white; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; float: right; }
+        .king-name { font-weight: bold; color: var(--shahi); display: block; margin-top: 5px; }
+
+        /* Modal (Pop-up) Styling */
+        .modal { display: none; position: fixed; z-index: 100; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); }
+        .modal-content { background: white; margin: 10% auto; padding: 30px; border-radius: 15px; width: 60%; max-width: 600px; position: relative; animation: slideDown 0.4s; }
+        @keyframes slideDown { from {top: -300px; opacity: 0} to {top: 10%; opacity: 1} }
+        .close-btn { position: absolute; right: 20px; top: 15px; font-size: 28px; cursor: pointer; color: #888; }
+        .modal-body h2 { color: var(--shahi); border-bottom: 2px solid var(--gold); padding-bottom: 10px; }
+        .modal-body p { line-height: 1.8; font-size: 1.1em; color: #333; }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <h1>सूर्यवंश वंशावली महाकोश</h1>
+    <p>राजाओं के नाम पर क्लिक करके उनकी गौरव गाथा पढ़ें</p>
+</div>
+
+<div class="search-area">
+    <input type="text" id="kingSearch" onkeyup="searchKing()" placeholder="राजा का नाम खोजें...">
+</div>
+
+<div class="kings-grid" id="kingsGrid">
+    <div class="king-card" onclick="openStory('Brahma', 'Srishti ke rachayita jinse is vansh ka aarambh hua.')"> 
+        <span class="king-number">1.</span> <span class="king-name">ब्रह्मा जी</span> 
+    </div>
+
+    <div class="king-card mahan" onclick="openStory('Raja Prithu', 'Maharaj Prithu Vishnu ke avatar maane jate hain. Jab prithvi par akaal pada, tab unhone dharti ko gaay ke roop mein dhoonda aur uska dohan karke ann-aushadhiyaan nikaali. Unhi ke parishram se dharti samatal (level) hui aur kheti ki shuruaat hui. Is mahan upkar ke karan dharti ka naam <b>Prithvi</b> pada.')"> 
+        <span class="badge">Mahan</span>
+        <span class="king-number">11.</span> <span class="king-name">महाराजा पृथु</span> 
+    </div>
+
+    <div class="king-card mahan" onclick="openStory('Raja Harishchandra', 'Satyavadi Harishchandra ne apne vachan ke liye apna poora rajya, patni aur putra tak ka tyaag kar diya. Unhone shamshan mein ek sevak ki naukri ki lekin kabhi asatya ka sahara nahi liya. Unki pariksha ne unhe itihas mein amar kar diya.')"> 
+        <span class="badge">Mahan</span>
+        <span class="king-number">31.</span> <span class="king-name">राजा हरिश्चंद्र</span> 
+    </div>
+
+    <div class="king-card mahan" onclick="openStory('Raja Bhagirath', 'Bhagirath ne apne purvajon (Sagar ke 60,000 putron) ki aatma ki shanti ke liye hazaron varshon tak tapasya ki. Unhone hi Ganga Mata ko dharti par utara. Unke is asambhav prayas ko aaj bhi <b>Bhagirath Prayas</b> kaha jata hai.')"> 
+        <span class="badge">Mahan</span>
+        <span class="king-number">43.</span> <span class="king-name">राजा भगीरथ</span> 
+    </div>
+
+    <div class="king-card mahan" onclick="openStory('Raja Dilip (II)', 'Raja Dilip ne santan prapti ke liye Nandini gaay ki seva ki. Ek baar unhone gaay ko sher se bachane ke liye apna sharir sher ke aage pesh kar diya. Unki isi bhakti se prasann hokar unhe Raja Raghu jaisa putra mila.')"> 
+        <span class="badge">Mahan</span>
+        <span class="king-number">59.</span> <span class="king-name">राजा दिलीप</span> 
+    </div>
+
+    <div class="king-card mahan" onclick="openStory('Raja Raghu', 'Raja Raghu ek mahan vijeta aur daani raja the. Unhone Vishvajit Yagya karke apni saari sampatti daan kar di thi. Unki veerta ke karan hi is vansh ko <b>Raghuvansh</b> kaha jane laga.')"> 
+        <span class="badge">Mahan</span>
+        <span class="king-number">60.</span> <span class="king-name">महाराजा रघु</span> 
+    </div>
+
+    <div class="king-card mahan" style="background: #fff0e0; border: 2px solid var(--shahi);" onclick="openStory('Bhagwan Shri Ram', 'Maryada Purushottam Shri Ram ne asatya par satya ki vijay prapt ki. Unka shasan <b>Ram-Rajya</b> ke naam se adarsh mana jata hai. Ve Surya-vansh ke 63ve aur sabse tejasvi raja hain.')"> 
+        <span class="badge">Avatar</span>
+        <span class="king-number">63.</span> <span class="king-name">भगवान श्री राम</span> 
+    </div>
+</div>
+
+<div id="storyModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <div id="modalBody" class="modal-body">
+            </div>
+    </div>
+</div>
+
+<script>
+function openStory(name, detail) {
+    document.getElementById('modalBody').innerHTML = "<h2>" + name + "</h2><p>" + detail + "</p>";
+    document.getElementById('storyModal').style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById('storyModal').style.display = "none";
+}
+
+function searchKing() {
+    let input = document.getElementById('kingSearch').value.toUpperCase();
+    let cards = document.getElementsByClassName('king-card');
+    for (let i = 0; i < cards.length; i++) {
+        if (cards[i].innerText.toUpperCase().indexOf(input) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+
+// Close modal if user clicks outside of it
+window.onclick = function(event) {
+    let modal = document.getElementById('storyModal');
+    if (event.target == modal) { closeModal(); }
+}
+</script>
+
+<footer style="text-align: center; margin-top: 50px; color: #888;">
+    <p>॥ जय श्री राम ॥</p>
+</footer>
+<tr><td>1</td><td>ब्रह्मा जी</td><td>सृष्टि के रचयिता</td></tr>
+<tr><td>2</td><td>मरीचि</td><td>ब्रह्मा के पुत्र</td></tr>
+<tr><td>3</td><td>कश्यप</td><td>ऋषि कश्यप</td></tr>
+<tr class="special-row"><td>4</td><td>विवस्वान (सूर्य)</td><td>इन्हीं से सूर्यवंश चला</td></tr>
+<tr><td>5</td><td>वैवस्वत मनु</td><td>प्रथम मानव</td></tr>
+<tr class="special-row"><td>6</td><td>इक्ष्वाकु</td><td>अयोध्या नगरी बसाई</td></tr>
+<tr><td>10</td><td>महाराज पृथु</td><td>धरती का नाम 'पृथ्वी' रखा</td></tr>
+<tr class="special-row"><td>32</td><td>हरिश्चंद्र</td><td>सत्य के लिए सर्वस्व त्यागा</td></tr>
+<tr class="special-row"><td>40</td><td>राजा सगर</td><td>60,000 पुत्रों के पिता</td></tr>
+<tr class="special-row"><td>44</td><td>राजा भगीरथ</td><td>गंगा को धरती पर लाए</td></tr>
+<tr class="special-row"><td>61</td><td>महाराजा रघु</td><td>रघुकुल रीति चलाई</td></tr>
+<tr><td>62</td><td>राजा अज</td><td>दशरथ के पिता</td></tr>
+<tr><td>63</td><td>राजा दशरथ</td><td>श्री राम के पिता</td></tr>
+<tr class="special-row" style="background:#ffdca8"><td>64</td><td>भगवान श्री राम</td><td>मर्यादा पुरुषोत्तम</td></tr>
+
+</body>
+</html>
+
+</footer>
+
+</body>
+</html>
